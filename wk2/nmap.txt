@@ -1,0 +1,39 @@
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# nmap --version
+Nmap version 7.94SVN ( https://nmap.org )
+Platform: x86_64-pc-linux-gnu
+Compiled with: liblua-5.4.6 openssl-3.0.13 libssh2-1.11.0 libz-1.3 libpcre2-10.42 libpcap-1.10.4 nmap-libdnet-1.12 ipv6
+Compiled without:
+Available nsock engines: epoll poll select
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# nmap 167.99.187.69
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-19 23:01 UTC
+Nmap scan report for ubuntu-s-1vcpu-1gb-tor1-01 (167.99.187.69)
+Host is up (0.0000040s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 0.16 seconds
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 8000 167.99.187.69
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-19 23:03 UTC
+Nmap scan report for ubuntu-s-1vcpu-1gb-tor1-01 (167.99.187.69)
+Host is up (0.000073s latency).
+
+PORT     STATE  SERVICE
+8000/tcp closed http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 3000-8000 167.99.187.69
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-19 23:03 UTC
+Nmap scan report for ubuntu-s-1vcpu-1gb-tor1-01 (167.99.187.69)
+Host is up (0.0000050s latency).
+All 5001 scanned ports on ubuntu-s-1vcpu-1gb-tor1-01 (167.99.187.69) are in ignored states.
+Not shown: 5001 closed tcp ports (reset)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.14 seconds
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -F 167.99.187.69
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-19 23:03 UTC
+Nmap scan report for ubuntu-s-1vcpu-1gb-tor1-01 (167.99.187.69)
+Host is up (0.0000070s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh

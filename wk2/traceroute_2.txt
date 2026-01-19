@@ -1,0 +1,9 @@
+ericlaudrum@MacBook-Pro-2 wk2 % traceroute 167.99.187.69
+traceroute to 167.99.187.69 (167.99.187.69), 64 hops max, 40 byte packets
+ 1  10.0.0.1 (10.0.0.1)  11.126 ms  2.439 ms  2.227 ms
+ 2  pool-99-250-164-1.cpe.net.cable.rogers.com (99.250.164.1)  15.995 ms  14.498 ms  14.784 ms
+ 3  69.63.255.173 (69.63.255.173)  12.611 ms  14.416 ms  14.645 ms
+ 4  209.148.233.221 (209.148.233.221)  16.669 ms  15.125 ms  17.380 ms
+ 5  69.63.248.69 (69.63.248.69)  15.476 ms  15.540 ms  15.848 ms
+ 6  digitalocean-tor1-edge2.ip4.torontointernetxchange.net (206.108.35.15)  34.673 ms  32.971 ms  33.748 ms
+ 7  * * *
